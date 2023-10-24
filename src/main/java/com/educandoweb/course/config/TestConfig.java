@@ -14,8 +14,6 @@ import java.util.Arrays;
 public class TestConfig implements CommandLineRunner {
     @Autowired
     UserRepository userRepository;
-
-
     @Override
     public void run(String... args) throws Exception {
         User u1 = new User(null, "Maria Brown", "maria@gmail.com", "988888888", "123456");
