@@ -30,7 +30,7 @@ public class Order implements Serializable {
         this.id = id;
         this.moment = moment;
         this.client = client;
-        this.orderStatus = orderStatus;
+        setOrderStatus(orderStatus);
     }
 
     public Long getId() {
