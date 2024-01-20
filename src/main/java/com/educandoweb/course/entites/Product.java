@@ -17,6 +17,7 @@ public class Product implements Serializable {
     private String name;
     private String description;
     private Double price;
+    @Column(length = 1024)
     private String imgUrl;
 
     @ManyToMany
