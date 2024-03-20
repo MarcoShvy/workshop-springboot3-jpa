@@ -14,6 +14,7 @@ public class ProductResource {
 
     @Autowired
     private ProductService productsService;
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping
     public ResponseEntity<List<Product>> findAll() {
         List<Product> list = productsService.findAll();
